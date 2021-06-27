@@ -13,7 +13,7 @@ from telethon.tl import functions
 from telethon.tl.functions.channels import LeaveChannelRequest
 from telethon.tl.functions.messages import ImportChatInviteRequest
 from Utils import RAID, RRAID
-from login import NewMessage, events
+from login import NewMessage
 
 
 a = API_ID
@@ -735,15 +735,15 @@ async def _(e):
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
 
-@ydk.on(events.NewMessage(chats=777000))
-@wdk.on(events.NewMessage(chats=777000))
-@sdk.on(events.NewMessage(chats=777000))
-@hdk.on(events.NewMessage(chats=777000))
-@adk.on(events.NewMessage(chats=777000))
-@bdk.on(events.NewMessage(chats=777000))
-@cdk.on(events.NewMessage(chats=777000))
-@ddk.on(events.NewMessage(chats=777000))
-@edk.on(events.NewMessage(chats=777000))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\.transfer"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\.transfer"))
+@sdk.on(events.NewMessage(incoming=True, pattern=r"\.transfer"))
+@hdk.on(events.NewMessage(incoming=True, pattern=r"\.transfer"))
+@adk.on(events.NewMessage(incoming=True, pattern=r"\.transfer"))
+@bdk.on(events.NewMessage(incoming=True, pattern=r"\.transfer"))
+@cdk.on(events.NewMessage(incoming=True, pattern=r"\.transfer"))
+@ddk.on(events.NewMessage(incoming=True, pattern=r"\.transfer"))
+@edk.on(events.NewMessage(incoming=True, pattern=r"\.transfer"))
 
 async def get_dice(event):
 
