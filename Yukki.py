@@ -13,7 +13,7 @@ from telethon.tl import functions
 from telethon.tl.functions.channels import LeaveChannelRequest
 from telethon.tl.functions.messages import ImportChatInviteRequest
 from Utils import RAID, RRAID
-from login import events, NewMessage, event
+from login import NewMessage, events
 
 
 a = API_ID
