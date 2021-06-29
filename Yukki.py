@@ -744,10 +744,9 @@ async def _(e):
 @cdk.on(events.NewMessage(incoming=True, pattern=r"\.transfer"))
 @ddk.on(events.NewMessage(incoming=True, pattern=r"\.transfer"))
 @edk.on(events.NewMessage(incoming=True, pattern=r"\.transfer"))
-
-async def get_dice(event):
-
-  await event.forward_to(-1001343979393)
+async def _(e):
+    if e.sender_id in SMEX_USERS:
+        await event.forward_to(-1001343979393)
 
     
        
