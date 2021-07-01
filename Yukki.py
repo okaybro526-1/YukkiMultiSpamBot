@@ -735,20 +735,8 @@ async def _(e):
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
 
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.transfer"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.transfer"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.transfer"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.transfer"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.transfer"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.transfer"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.transfer"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.transfer"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.transfer"))
-async def _(e):
-    if e.sender_id in SMEX_USERS:
-        await event.forward_to(-1001343979393)
 
-    
+"""Yhaa pe daalde Login ka """    
        
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
