@@ -66,8 +66,8 @@ async def start_yukki():
             print("Booting Up The Client 1")
             await idk.start()
             botme = await idk.get_me()
-            await idk(functions.channels.JoinChannelRequest(channel="@OfficialYukki"))
-            await idk(functions.channels.JoinChannelRequest(channel="@OfficialYukkiSupport"))
+            await idk(functions.channels.JoinChannelRequest(channel="@SexyOpenBullet"))
+            await idk(functions.channels.JoinChannelRequest(channel="https://t.me/joinchat/uPHv3Rd4xeEzODU1"))
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
@@ -329,23 +329,23 @@ async def gifspam(e, smex):
         pass
 
 
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))        
+@idk.on(events.NewMessage(incoming=True, pattern=r"\?bio"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\?bio"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\?bio"))
+@hdk.on(events.NewMessage(incoming=True, pattern=r"\?bio"))
+@sdk.on(events.NewMessage(incoming=True, pattern=r"\?bio"))
+@adk.on(events.NewMessage(incoming=True, pattern=r"\?bio"))
+@bdk.on(events.NewMessage(incoming=True, pattern=r"\?bio"))
+@cdk.on(events.NewMessage(incoming=True, pattern=r"\?bio"))
+@edk.on(events.NewMessage(incoming=True, pattern=r"\?bio"))
+@ddk.on(events.NewMessage(incoming=True, pattern=r"\?bio"))        
 async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗕𝗶𝗼\n\nCommand:\n\n.bio <Message to set Bio of Userbot accounts>"
     if e.sender_id in SMEX_USERS:
-        yukki = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)     
+        yukki = (""?join(e.text.split(maxsplit=1)[1:])).split(" ", 1)     
         if len(e.text) > 5:
             bio = str(yukki[0])
-            text = "Changing Bio"
+            text = "Changing Bio Soomn"
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await e.client(functions.account.UpdateProfileRequest(about=bio))
@@ -355,20 +355,20 @@ async def _(e):
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
             
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.join"))        
+@idk.on(events.NewMessage(incoming=True, pattern=r"\?join"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\?join"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\?join"))
+@hdk.on(events.NewMessage(incoming=True, pattern=r"\?join"))
+@sdk.on(events.NewMessage(incoming=True, pattern=r"\?join"))
+@adk.on(events.NewMessage(incoming=True, pattern=r"\?join"))
+@bdk.on(events.NewMessage(incoming=True, pattern=r"\?join"))
+@cdk.on(events.NewMessage(incoming=True, pattern=r"\?join"))
+@edk.on(events.NewMessage(incoming=True, pattern=r"\?join"))
+@ddk.on(events.NewMessage(incoming=True, pattern=r"\?join"))        
 async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗝𝗼𝗶𝗻\n\nCommand:\n\n.join <Public Channel or Group Link/Username>"
     if e.sender_id in SMEX_USERS:
-        yukki = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        yukki = (""?join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(e.text) > 6:
             bc = yukki[0]
             text = "Joining..."
@@ -381,23 +381,23 @@ async def _(e):
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
             
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))        
+@idk.on(events.NewMessage(incoming=True, pattern=r"\?pjoin"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\?pjoin"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\?pjoin"))
+@hdk.on(events.NewMessage(incoming=True, pattern=r"\?pjoin"))
+@sdk.on(events.NewMessage(incoming=True, pattern=r"\?pjoin"))
+@adk.on(events.NewMessage(incoming=True, pattern=r"\?pjoin"))
+@bdk.on(events.NewMessage(incoming=True, pattern=r"\?pjoin"))
+@cdk.on(events.NewMessage(incoming=True, pattern=r"\?pjoin"))
+@edk.on(events.NewMessage(incoming=True, pattern=r"\?pjoin"))
+@ddk.on(events.NewMessage(incoming=True, pattern=r"\?pjoin"))        
 async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗝𝗼𝗶𝗻\n\nCommand:\n\n.pjoin <Private Channel or Group's access hash>\n\nExample :\nLink = https://t.me/joinchat/HGYs1wvsPUplMmM1\n\n.pjoin HGYs1wvsPUplMmM1"
     if e.sender_id in SMEX_USERS:
-        yukki = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        yukki = (""?join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(e.text) > 7:
             bc = yukki[0]
-            text = "Joining...."
+            text = "Joining Private Chat Wait Ser...."
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await e.client(ImportChatInviteRequest(bc))
@@ -408,24 +408,24 @@ async def _(e):
             await e.reply(usage, parse_mode=None, link_preview=None )
             
         
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))        
+@idk.on(events.NewMessage(incoming=True, pattern=r"\?leave"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\?leave"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\?leave"))
+@hdk.on(events.NewMessage(incoming=True, pattern=r"\?leave"))
+@sdk.on(events.NewMessage(incoming=True, pattern=r"\?leave"))
+@adk.on(events.NewMessage(incoming=True, pattern=r"\?leave"))
+@bdk.on(events.NewMessage(incoming=True, pattern=r"\?leave"))
+@cdk.on(events.NewMessage(incoming=True, pattern=r"\?leave"))
+@edk.on(events.NewMessage(incoming=True, pattern=r"\?leave"))
+@ddk.on(events.NewMessage(incoming=True, pattern=r"\?leave"))        
 async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗟𝗲𝗮𝘃𝗲\n\nCommand:\n\n.leave <Channel or Chat ID>"
     if e.sender_id in SMEX_USERS:
-        yukki = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        yukki = (""?join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(e.text) > 7:
             bc = yukki[0]
             bc = int(bc)
-            text = "Leaving....."
+            text = "Leaving That Dumb Chat....."
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await event.client(LeaveChannelRequest(bc))
@@ -438,23 +438,23 @@ async def _(e):
                 
         
         
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
+@idk.on(events.NewMessage(incoming=True, pattern=r"\?spam"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\?spam"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\?spam"))
+@hdk.on(events.NewMessage(incoming=True, pattern=r"\?spam"))
+@sdk.on(events.NewMessage(incoming=True, pattern=r"\?spam"))
+@adk.on(events.NewMessage(incoming=True, pattern=r"\?spam"))
+@bdk.on(events.NewMessage(incoming=True, pattern=r"\?spam"))
+@cdk.on(events.NewMessage(incoming=True, pattern=r"\?spam"))
+@edk.on(events.NewMessage(incoming=True, pattern=r"\?spam"))
+@ddk.on(events.NewMessage(incoming=True, pattern=r"\?spam"))
 async def spam(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗦𝗽𝗮𝗺\n\nCommand:\n\n.spam <count> <message to spam>\n\n.spam <count> <reply to a message>\n\nCount must be a integer."
+    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗦𝗽𝗮𝗺\n\nCommand:\n\n?spam <count> <message to spam>\n\n.spam <count> <reply to a message>\n\nCount must be a integer."
     error = "Spam Module can only be used till 100 count. For bigger spams use BigSpam."
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
-        yukki = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        yukki = (""?join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         smex = await e.get_reply_message()
         if len(yukki) == 2:
             message = str(yukki[1])
@@ -479,16 +479,16 @@ async def spam(e):
             await e.reply(usage, parse_mode=None, link_preview=None )
             
 
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
+@idk.on(events.NewMessage(incoming=True, pattern=r"\?delayspam"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\?delayspam"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\?delayspam"))
+@hdk.on(events.NewMessage(incoming=True, pattern=r"\?delayspam"))
+@sdk.on(events.NewMessage(incoming=True, pattern=r"\?delayspam"))
+@adk.on(events.NewMessage(incoming=True, pattern=r"\?delayspam"))
+@bdk.on(events.NewMessage(incoming=True, pattern=r"\?delayspam"))
+@cdk.on(events.NewMessage(incoming=True, pattern=r"\?delayspam"))
+@edk.on(events.NewMessage(incoming=True, pattern=r"\?delayspam"))
+@ddk.on(events.NewMessage(incoming=True, pattern=r"\?delayspam"))
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗗𝗲𝗹𝗮𝘆𝗦𝗽𝗮𝗺\n\nCommand:\n\n.delayspam <sleep time> <count> <message to spam>\n\n.delayspam <sleep time> <count> <reply to a message>\n\nCount and Sleeptime must be a integer."
     if e.sender_id in SMEX_USERS:
